@@ -169,10 +169,11 @@ end
  
  # Driver test code
  p acct_groups(fence_lizards).class == Hash 
-  p acct_groups(fence_lizards)["unit1"].length==6
-  p acct_groups(fence_lizards)["unit2"].length==6
-  p acct_groups(fence_lizards)["unit3"].length==6
+  p acct_groups(fence_lizards)["unit1"].length==6 # 6 groups in each unit
+  p acct_groups(fence_lizards)["unit2"].length==6 # 6 groups in each unit
+  p acct_groups(fence_lizards)["unit3"].length==6 # 6 groups in each unit
 
+# Check to see if none of the groups in each unit have same students.
 p acct_groups(fence_lizards)["unit1"]["group1"] &  acct_groups(fence_lizards)["unit1"]["group2"] & acct_groups(fence_lizards)["unit1"]["group3"] & acct_groups(fence_lizards)["unit1"]["group4"] & acct_groups(fence_lizards)["unit1"]["group5"]  & acct_groups(fence_lizards)["unit1"]["group6"] == []
  
 p acct_groups(fence_lizards)["unit2"]["group1"] &  acct_groups(fence_lizards)["unit2"]["group2"] & acct_groups(fence_lizards)["unit2"]["group3"] & acct_groups(fence_lizards)["unit2"]["group4"] & acct_groups(fence_lizards)["unit2"]["group5"]  & acct_groups(fence_lizards)["unit2"]["group6"] == []
