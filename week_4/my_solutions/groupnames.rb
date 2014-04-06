@@ -109,40 +109,43 @@ end
  unit["unit"+n.to_s] = groups
  end
   
-#   for i in 1..3
-# puts
-# puts "UNIT #{i} groups are:"
-# puts
-# puts "Group1:\n#{unit["unit#{i}"]["group1"].join("\n")}"
-# puts
-# puts "Group2:\n#{unit["unit#{i}"]["group2"].join("\n")}"
-# puts
-# puts "Group3:\n#{unit["unit#{i}"]["group3"].join("\n")}"
-# puts
-# puts "Group4:\n#{unit["unit#{i}"]["group4"].join("\n")}"
-# puts
-# puts "Group5:\n#{unit["unit#{i}"]["group5"].join("\n")}"
-# puts
-# puts "Group6:\n#{unit["unit#{i}"]["group6"].join("\n")}"
 
-# end
- 
  return unit
+
+  for i in 1..3 
+puts
+puts "UNIT #{i} groups are:"
+puts
+puts "Group1:\n#{unit["unit#{i}"]["group1"].join("\n")}"
+puts
+puts "Group2:\n#{unit["unit#{i}"]["group2"].join("\n")}"
+puts
+puts "Group3:\n#{unit["unit#{i}"]["group3"].join("\n")}"
+puts
+puts "Group4:\n#{unit["unit#{i}"]["group4"].join("\n")}"
+puts
+puts "Group5:\n#{unit["unit#{i}"]["group5"].join("\n")}"
+puts
+puts "Group6:\n#{unit["unit#{i}"]["group6"].join("\n")}"
+
  end
+ 
+
+end
  
  
  # Driver test code
  p acct_groups(fence_lizards).class == Hash 
-  p acct_groups(fence_lizards)["unit1"].length==6 # 6 groups in each unit
-  p acct_groups(fence_lizards)["unit2"].length==6 # 6 groups in each unit
+ p acct_groups(fence_lizards)["unit1"].length==6 # 6 groups in each unit
+   p acct_groups(fence_lizards)["unit2"].length==6 # 6 groups in each unit
   p acct_groups(fence_lizards)["unit3"].length==6 # 6 groups in each unit
 
-# Check to see if none of the groups in each unit have same students.
-p acct_groups(fence_lizards)["unit1"]["group1"] &  acct_groups(fence_lizards)["unit1"]["group2"] & acct_groups(fence_lizards)["unit1"]["group3"] & acct_groups(fence_lizards)["unit1"]["group4"] & acct_groups(fence_lizards)["unit1"]["group5"]  & acct_groups(fence_lizards)["unit1"]["group6"] == []
+# # Check to see if none of the groups in each unit have same students.
+ p acct_groups(fence_lizards)["unit1"]["group1"] &  acct_groups(fence_lizards)["unit1"]["group2"] & acct_groups(fence_lizards)["unit1"]["group3"] & acct_groups(fence_lizards)["unit1"]["group4"] & acct_groups(fence_lizards)["unit1"]["group5"]  & acct_groups(fence_lizards)["unit1"]["group6"] == []
  
-p acct_groups(fence_lizards)["unit2"]["group1"] &  acct_groups(fence_lizards)["unit2"]["group2"] & acct_groups(fence_lizards)["unit2"]["group3"] & acct_groups(fence_lizards)["unit2"]["group4"] & acct_groups(fence_lizards)["unit2"]["group5"]  & acct_groups(fence_lizards)["unit2"]["group6"] == []
+ p acct_groups(fence_lizards)["unit2"]["group1"] &  acct_groups(fence_lizards)["unit2"]["group2"] & acct_groups(fence_lizards)["unit2"]["group3"] & acct_groups(fence_lizards)["unit2"]["group4"] & acct_groups(fence_lizards)["unit2"]["group5"]  & acct_groups(fence_lizards)["unit2"]["group6"] == []
 
-p acct_groups(fence_lizards)["unit3"]["group1"] &  acct_groups(fence_lizards)["unit3"]["group2"] & acct_groups(fence_lizards)["unit3"]["group3"] & acct_groups(fence_lizards)["unit3"]["group4"] & acct_groups(fence_lizards)["unit3"]["group5"]  & acct_groups(fence_lizards)["unit3"]["group6"] == []
+ p acct_groups(fence_lizards)["unit3"]["group1"] &  acct_groups(fence_lizards)["unit3"]["group2"] & acct_groups(fence_lizards)["unit3"]["group3"] & acct_groups(fence_lizards)["unit3"]["group4"] & acct_groups(fence_lizards)["unit3"]["group5"]  & acct_groups(fence_lizards)["unit3"]["group6"] == []
 
 
 #Reflection
