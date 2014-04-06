@@ -16,33 +16,33 @@
 
 
 #initial solution
-def essay_writer(title,topic,date,thesis_statment,pronoun,city,number)
+# def essay_writer(title,topic,date,thesis_statment,pronoun,city,number)
     
-template1 = "title: topic is the number President of USA.he was born on date in city on date.he manages Government effectively.his duties are:thesis_statment"
+# template1 = "title: topic is the number President of USA.he was born on date in city on date.he manages Government effectively.his duties are:thesis_statment"
   
 
-   if pronoun == 'female'
-       template1.gsub!("he","she")
-    template1.gsub!("his","her")
+#    if pronoun == 'female'
+#        template1.gsub!("he","she")
+#     template1.gsub!("his","her")
   
-end
+# end
 
    
-    template1.gsub!("title",title)
-     template1.gsub!("date",date)
-       template1.gsub!("topic",topic)
-      template1.gsub!("thesis_statment",thesis_statment)
-      template1.gsub!("city",city)
-       template1.gsub!("number",number)
+#     template1.gsub!("title",title)
+#      template1.gsub!("date",date)
+#        template1.gsub!("topic",topic)
+#       template1.gsub!("thesis_statment",thesis_statment)
+#       template1.gsub!("city",city)
+#        template1.gsub!("number",number)
 
- new = template1.split(".")
+#  new = template1.split(".")
 
 
- new.map!{|x| x..capitalize}
+#  new.map!{|x| x..capitalize}
 
-new.join(".")+"."
+# new.join(".")+"."
      
-end
+# end
 
 
 
