@@ -23,42 +23,6 @@
 # assign Unit[unit1] to group
 # loop through and assign Unit[unit2] and unit[unit3] as well...
 
-def acct_groups(fence_lizards)
-    unit = Hash.new()
-    for n in 1..3
-used = []
-groups = Hash.new(0)
-i = 0
-m = 1
-groups["group1"]=  [] 
-groups["group2"] = []
-groups["group3"] = []
-groups["group4"] = []
-groups["group5"] = []
-groups["group6"] = []
-
-for i in 1..fence_lizards.length
-
-   a = 0+ rand(fence_lizards.length-0)
-
-    if (used.include?a)
-    a = 0+ rand(fence_lizards.length-0)
-     redo
-     end  
-      used << a
-       groups["group"+m.to_s] << fence_lizards[a]
-        m = m+1
-        if m==7
-         m = 1
-     end
-     
-end
- unit["unit"+n.to_s] = groups
- end
-
-
-
-
 
 #initial Solution
 
