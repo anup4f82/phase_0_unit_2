@@ -46,25 +46,10 @@ class VirusPredictor
     # speed_of_spread(@population_density, @state)
   end
 
-   private #what is this?  what happens if it were cut and pasted above the virus_effects method
+   private 
 
    # This method takes in the argument as population_density ,population and state and then calculates and outputs the number of deaths
 
-  def predicted_deaths
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else 
-      number_of_deaths = (@population * 0.05).floor
-    end
-  
-
-   end
   # def predicted_deaths(population_density, population, state)
   #   if @population_density >= 200
   #     number_of_deaths = (@population * 0.4).floor
@@ -81,6 +66,27 @@ class VirusPredictor
   #   print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   # end
+
+
+   #Re-factored Solution for predicted_deaths - We dont need the arguments, since instance variables are available across all methods.
+
+  def predicted_deaths
+    if @population_density >= 200
+      number_of_deaths = (@population * 0.4).floor
+    elsif @population_density >= 150
+      number_of_deaths = (@population * 0.3).floor
+    elsif @population_density >= 100
+      number_of_deaths = (@population * 0.2).floor
+    elsif @population_density >= 50
+      number_of_deaths = (@population * 0.1).floor
+    else 
+      number_of_deaths = (@population * 0.05).floor
+    end
+  
+
+   end
+
+
   # this method calculates the speed at which the virus will spread.
 
   # def speed_of_spread(population_density, state) #in months
@@ -102,6 +108,7 @@ class VirusPredictor
 
   # end
 
+# Re-factored method - speed_of_spread - We dont need arguments,since instance variables are available across all the methods.
 
   def speed_of_spread #in months
     speed = 0.0
@@ -129,6 +136,7 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
+# Refactored the Object instantiation
  
 STATE_DATA.each do |x,y|
 
