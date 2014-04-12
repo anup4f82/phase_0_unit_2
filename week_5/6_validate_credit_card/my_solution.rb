@@ -1,7 +1,7 @@
 # U2.W5: Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 
 # 2. Pseudocode
 
@@ -14,6 +14,8 @@
 
 # Don't forget to check on intialization for a card length
 # of exactly 16 digits
+
+
 class CreditCard
 
 def initialize(card)
@@ -27,7 +29,7 @@ def check_card
 
  a = @card.to_s.split("")
 len = (@card.to_s.length)-1
-puts len
+
 c = []
 
 for i in 0..len

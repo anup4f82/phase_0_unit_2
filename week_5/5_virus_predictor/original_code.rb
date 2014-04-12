@@ -83,7 +83,7 @@ class VirusPredictor
       number_of_deaths = (@population * 0.05).floor
     end
   
-
+print "#{@state} will lose #{number_of_deaths} people in this outbreak"
    end
 
 
