@@ -5,15 +5,16 @@
 
 # 2. Pseudocode
 
+# Input: Number of sides for Die
+# Output: Random side
+# Steps:
 # Create a Class Called Die
 # Create the initializer method that takes argument as sides and creates a Instance variable @sides
 # If @ sides < 1 then raise a ArgumentError
 # Create a method called sides, which returns the number of sides.
 # Create a method called roll which returns a random number between 1 and the number of sides.
 
-# Input:
-# Output:
-# Steps:
+
 
 
 # 3. Initial Solution
