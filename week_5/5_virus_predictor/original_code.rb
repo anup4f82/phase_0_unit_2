@@ -25,7 +25,9 @@
 # BONUS: Access the population by calling it on the instance.
 
 
-require_relative 'state_data'
+
+require_relative 'state_data'  #require_relative Statement means the file state_data is in the same directory as the original_code.rb file. When we run the code it will search for the file 
+#state_data in this directory.
 
 class VirusPredictor
 
@@ -141,9 +143,9 @@ end
 STATE_DATA.each do |x,y|
 
 
-  a = VirusPredictor.new(x,STATE_DATA[x][:population_density], STATE_DATA[x][:population], STATE_DATA[x][:region], STATE_DATA[x][:regional_spread]) 
+  city = VirusPredictor.new(x,STATE_DATA[x][:population_density], STATE_DATA[x][:population], STATE_DATA[x][:region], STATE_DATA[x][:regional_spread]) 
 
- a.virus_effects
+ city.virus_effects
  
    end
 

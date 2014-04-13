@@ -149,5 +149,21 @@ p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(
 
 #  Reflection 
 
-
+# 5. Reflection 
+# What parts of your strategy worked? What problems did you face?
+# I worked on this challenge with Emmanuel. During the session I had to read the code ,understand it and fix it. I did suggest a couple of ideas but could not 
+#finish the solution during the session. I did complete it after
+# What questions did you have while coding? What resources did you find to help you answer them?
+# In this case we had to assign value to a dynamic variable depending on user input. I did a bit of research and decided to use 'instance variables'
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# I had to research a lot on how to create variables during runtime. I finally figured out how to create instance variables dynamically, but not sure how to do the 
+#same for local variables
+# Did you learn any new skills or tricks?
+# Yes dynamically creating instance variables
+# How confident are you with each of the learning objectives?
+# Fairly confident
+# Which parts of the challenge did you enjoy?
+# How to dynamically create Instance variables
+# Which parts of the challenge did you find tedious?
+# researching on how to dynamically create 'variables'
 

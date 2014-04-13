@@ -70,11 +70,12 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+
 d  = Die.new(6)
  p (d.sides) == 6
-p (d.instance_of?(Die)) 
-p (d.instance_variables).length == 1
-
+p (d.instance_of?(Die)) == true
+a = [1,2,3,4,5,6]
+p a.include?(d.roll) == true
 
 
 

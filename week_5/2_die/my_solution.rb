@@ -3,16 +3,16 @@
 
 # I worked on this challenge by myself
 # 2. Pseudocode
-
+# Input: array of strings
+# Output: Random side from the array
+# Steps:
 # Define a Class Called Die 
 # Define initialize method for class Die that takes in argument as an array called labels and creates instance variable @labels
 # If @lables is empty then raise a ArgumentError
 # Define a method called sides which returns the length of the array @labels
 #Define a method called roll that returns a random value in the array @labels
 
-# Input:
-# Output:
-# Steps:
+
 
 
 # 3. Initial Solution
@@ -65,16 +65,16 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+label = ["A","B","C","D","E","F"]
 
-dice = Die.new(["A","B","C","D","E","F"])
+dice = Die.new(label)
+
 p (dice.sides) == 6
-p (dice.instance_variables).length != 0
+p (dice.instance_of?(Die)) == true
+
+p label.include?(dice.roll) == true
 
 
-
-
-
-# 5. Reflection 
 
 
 # 5. Reflection 

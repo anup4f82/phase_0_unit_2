@@ -137,4 +137,4 @@ p (valid.class) == CreditCard
 # Which parts of the challenge did you enjoy?
 # rspec passing feels good.
 # Which parts of the challenge did you find tedious?
-# figuring out how to use map took some time.
+# figuring out how to use map took some time but I think I am good at it now :)
