@@ -89,3 +89,17 @@ assert {invalid.check_card == false}
 
 
 # 5. Reflection
+# What parts of your strategy worked? What problems did you face?
+# I didnt face any problems for this challenge. I was familiar with yield and block concepts
+# What questions did you have while coding? What resources did you find to help you answer them?
+# None for this challenge
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# I learnt how to use assert method to test code
+# Did you learn any new skills or tricks?
+# Assert method
+# How confident are you with each of the Learning Competencies?
+# Very confident
+# Which parts of the challenge did you enjoy?
+# Using assert statements to test was new and I found it useful
+# Which parts of the challenge did you find tedious?
+# None
