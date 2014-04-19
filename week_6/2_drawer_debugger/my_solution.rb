@@ -110,19 +110,7 @@ removed_spork.eat
 silverware_drawer.view_contents
 
 # DRIVER TESTS GO BELOW THIS LINE
-# def assert
-#   raise "Assertion failed!" unless yield
-# end
-# test_drawer = Drawer.new
-# assert { test_drawer.view_contents == []}
 
-# test_drawer.add_item(Silverware.new("spoon"))
-# test_drawer.contents
-# test_drawer.view_contents
-# assert { @contents == "spoon" }
-
-# test_drawer.add_item(Silverware.new("fork"))
-# assert { @contents == ["spoon", "fork"] }
 
 def assert
   raise "Assertion failed!" unless yield
@@ -137,14 +125,21 @@ test_drawer.remove_item
 spoon.eat
 assert {spoon.eat == false}
 test_drawer.dump
-test_drawer.dump == "Your drawer is empty"
+assert {test_drawer.view_contents == []}
 
 
 # 5. Reflection 
-
-
-
-
-
-
-# 5. Reflection 
+# What parts of your strategy worked? What problems did you face?
+# We had some problems with the Driver test code. Apart from that we were able to fix the code pretty quickly
+# What questions did you have while coding? What resources did you find to help you answer them?
+# Just getting the driver test code to pass
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# We were doing a string comparison for test_drawer.view_contents and couldnt get it to work
+# Did you learn any new skills or tricks?
+# Driver test code using assert
+# How confident are you with each of the Learning Competencies?
+# Very confident
+# Which parts of the challenge did you enjoy?
+# Getting the code to work was satisfying
+# Which parts of the challenge did you find tedious?
+# Driver test code
