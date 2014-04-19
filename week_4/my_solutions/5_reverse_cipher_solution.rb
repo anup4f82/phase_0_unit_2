@@ -1,7 +1,11 @@
 # U2.W4: Refactor Cipher Solution
 
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
+=======
+# I worked on this challenge [by myself, with: ].
+>>>>>>> origin/week_6
 
 
 # 1. Solution
@@ -10,6 +14,7 @@
 # Also make sure each step is necessary. If you don't think it's necessary
 # Try implementing the code without it. 
 
+<<<<<<< HEAD
 def translate_to_cipher(sentence)   #  Create a method called translate_to_cipher
     alphabet = ('a'..'z').to_a       # Create a array called alphabet that contains all the alphabets. Here (a..z) is a range and ._a converts the range to an array
     cipher = Hash[alphabet.zip(alphabet.rotate(4))] # Shifts the elements of the array by the count specified in the brackets
@@ -28,11 +33,32 @@ def translate_to_cipher(sentence)   #  Create a method called translate_to_ciphe
      end
     
     return encoded_sentence.join # returns the encoded sentence by using join.
+=======
+def translate_to_cipher(sentence)
+    alphabet = ('a'..'z').to_a
+    cipher = Hash[alphabet.zip(alphabet.rotate(4))]
+    spaces = ["@", "#", "$", "%", "^", "&", "*"]
+    
+    original_sentence = sentence.downcase
+    encoded_sentence = []
+    original_sentence.each_char do |element|
+      if cipher.include?(element)
+        encoded_sentence << cipher[element]
+      elsif element == ' '
+        encoded_sentence << spaces.sample
+      else 
+        encoded_sentence << element
+      end
+     end
+    
+    return encoded_sentence.join
+>>>>>>> origin/week_6
 end
 
 
 # Questions:
 # 1. What is the .to_a method doing?
+<<<<<<< HEAD
 # It converts the range into an array. 
 # 2. How does the rotate method work? What does it work on?
 # Rotate method works on arrays. It is used to shift the elements of the array by the count mentioned in paranthesis and returns a new array with the elements rotated.
@@ -53,6 +79,20 @@ end
 # Does this return the same thing every time?
 # No it doesnt. The reason for that is we are using the spaces.sample method to generate a random special character from the spaces array
 p translate_to_cipher("I want cookies") 
+=======
+# 2. How does the rotate method work? What does it work on?
+# 3. What is `each_char` doing?
+# 4. What does `sample` do?
+# 5. Are there any other methods you want to understand better?
+# 6. Does this code look better or worse than your refactored solution
+#    of the original cipher code? What's better? What's worse?
+# 7. Is this good code? What makes it good? What makes it bad?
+
+
+# 1. DRIVER TESTS GO BELOW THIS LINE
+# Does this return the same thing every time?
+p translate_to_cipher("I want cookies")
+>>>>>>> origin/week_6
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
@@ -63,6 +103,7 @@ p translate_to_cipher("I want cookies")
 
 # 5. Reflection 
 
+<<<<<<< HEAD
 # What parts of your strategy worked? What problems did you face?
 
 # Having done the 'group_cipher challenge' already , helped me understand whats going on and didnt have to spend too much time to understand what the code
@@ -80,3 +121,5 @@ p translate_to_cipher("I want cookies")
 # Learning new ruby methofds 'rotate' and 'sample'
 # Which parts of the challenge did you find tedious?
 # None.
+=======
+>>>>>>> origin/week_6

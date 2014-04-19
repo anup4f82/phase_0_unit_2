@@ -4,9 +4,15 @@
 
 
 ## Learning Objectives
+<<<<<<< HEAD
 - Manipulate and access data within data structures
 - Decompose a problem into smaller, easier to solve components
 - Iterate through data structures and manipulate the content
+=======
+- Iterate through data structures
+- Manipulate data within data structures
+- Decompose a problem into smaller, easier to solve components
+>>>>>>> origin/week_6
 - Find and use built-in Ruby methods to solve challenges
 
 
@@ -50,4 +56,8 @@ Make sure you pseudocode! These are big steps and they are a bit complicated, so
 4. [Refactored Solution](../../references/refactoring.md)
 5. [Reflect](../../references/reflection_guidelines.md)
 6. Sync your changes (push your solution) to Github
+<<<<<<< HEAD
 7. [Review](../../references/review.md)
+=======
+7. [Review](../../references/review.md)
+>>>>>>> origin/week_6

@@ -1,6 +1,10 @@
 # U2.W5: A Nested Array to Model a Boggle Board
 
+<<<<<<< HEAD
 # I worked on this challenge with Shawn Siebert
+=======
+# I worked on this challenge [by myself, with: ].
+>>>>>>> origin/week_6
 
 boggle_board = [["b", "r", "a", "e"],
                 ["i", "o", "d", "t"],
@@ -11,6 +15,7 @@ boggle_board = [["b", "r", "a", "e"],
 # Part 1: Access multiple elements of a nested array
 
 # Pseudocode
+<<<<<<< HEAD
 # Define a Class Board with the initializer as an array
 # Define a Method create_word
 #     The method create_word takes 1 argument called coords which will take 0 to many values
@@ -106,3 +111,52 @@ p boggle.boggle_board(0,1) == "r"
 # Working with Shawn and completing the solution
 # Which parts of the challenge did you find tedious?
 # None
+=======
+
+# Initial Solution
+
+
+# Refactored Solution
+
+
+# DRIVER TESTS GO BELOW THIS LINE
+
+
+# Reflection 
+
+#-------------------------------------------------------------------------------
+
+# Part 2: Write a method that takes a row number and returns all the elements in the row.  
+
+# Pseudocode
+
+# Initial Solution
+
+
+# Refactored Solution
+
+
+# DRIVER TESTS GO BELOW THIS LINE
+
+
+# Reflection 
+
+
+
+#-------------------------------------------------------------------------------
+
+# Part 3: Now write a method that takes a column number and returns all the elements in the column.
+
+# Pseudocode
+
+# Initial Solution
+
+
+# Refactored Solution
+
+
+# DRIVER TESTS GO BELOW THIS LINE
+
+
+# Reflection 
+>>>>>>> origin/week_6

@@ -13,6 +13,7 @@
 # 3. Initial Solution
 
 class RPNCalculator
+<<<<<<< HEAD
 
    
         
@@ -150,6 +151,12 @@ end
 
 
 
+=======
+  # Define your methods, here!
+end
+
+
+>>>>>>> origin/week_6
 
 # 4. Refactored Solution
 

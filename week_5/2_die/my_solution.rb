@@ -1,6 +1,7 @@
 # U2.W5: Die Class 2: Arbitrary Symbols
 
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
 # 2. Pseudocode
 # Input: array of strings
@@ -13,10 +14,20 @@
 #Define a method called roll that returns a random value in the array @labels
 
 
+=======
+# I worked on this challenge [by myself, with: ].
+
+# 2. Pseudocode
+
+# Input:
+# Output:
+# Steps:
+>>>>>>> origin/week_6
 
 
 # 3. Initial Solution
 
+<<<<<<< HEAD
 # class Die
 #   def initialize(labels)
       
@@ -58,11 +69,22 @@ end
   def roll
 
      return @labels.sample
+=======
+class Die
+  def initialize(labels)
+  end
+
+  def sides
+  end
+
+  def roll
+>>>>>>> origin/week_6
   end
 end
 
 
 
+<<<<<<< HEAD
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 label = ["A","B","C","D","E","F"]
@@ -73,11 +95,24 @@ p (dice.sides) == 6
 p (dice.instance_of?(Die)) == true
 
 p label.include?(dice.roll) == true
+=======
+# 4. Refactored Solution
+
+
+
+
+
+
+# 1. DRIVER TESTS GO BELOW THIS LINE
+
+
+>>>>>>> origin/week_6
 
 
 
 
 # 5. Reflection 
+<<<<<<< HEAD
 # What parts of your strategy worked? What problems did you face?
 # I didnt face any problems. Coming with Driver test code is sometimes tricky. 
 # What questions did you have while coding? What resources did you find to help you answer them?
@@ -92,3 +127,5 @@ p label.include?(dice.roll) == true
 # rspec passing feels good.
 # Which parts of the challenge did you find tedious?
 #None
+=======
+>>>>>>> origin/week_6

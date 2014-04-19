@@ -1,6 +1,7 @@
 # U2.W5: Die Class 1: Numeric
 
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
 
 # 2. Pseudocode
@@ -15,10 +16,20 @@
 # Create a method called roll which returns a random number between 1 and the number of sides.
 
 
+=======
+# I worked on this challenge [by myself, with: ].
+
+# 2. Pseudocode
+
+# Input:
+# Output:
+# Steps:
+>>>>>>> origin/week_6
 
 
 # 3. Initial Solution
 
+<<<<<<< HEAD
 # class Die
 #   def initialize(sides)
    
@@ -61,16 +72,37 @@ end
   
   def roll
     return  (1..@sides).to_a.sample
+=======
+class Die
+  def initialize(sides)
+    # code goes here
+  end
+  
+  def sides
+    # code goes here
+  end
+  
+  def roll
+    # code goes here
+>>>>>>> origin/week_6
   end
 end
 
 
 
+<<<<<<< HEAD
+=======
+# 4. Refactored Solution
+
+
+
+>>>>>>> origin/week_6
 
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+<<<<<<< HEAD
 d  = Die.new(6)
  p (d.sides) == 6
 p (d.instance_of?(Die)) == true
@@ -94,3 +126,11 @@ p a.include?(d.roll) == true
 # playing with objects, classes is fun
 # Which parts of the challenge did you find tedious?
 #None
+=======
+
+
+
+
+
+# 5. Reflection 
+>>>>>>> origin/week_6

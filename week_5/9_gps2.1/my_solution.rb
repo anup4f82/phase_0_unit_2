@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # U2.W5: The Bakery Challenge (GPS 2.1)
 
 # Your Names
@@ -131,6 +132,27 @@ end
  
 
 #-----------------------------------------------------------------------------------------------------
+=======
+# U2.W5: Bakery Challenge GPS
+
+# I worked on this challenge with: 
+
+
+
+
+
+
+# Our Refactored Solution
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/week_6
 #DRIVER CODE-- DO NOT MODIFY ANYTHING BELOW THIS LINE (except in the section at the bottom)
 # These are the tests to ensure it's working. 
 # These should all print true if the method is working properly.
@@ -142,13 +164,19 @@ p bakery_num(130, "pie") == "You need to make 16 pie(s), 0 cake(s), and 2 cookie
 # p bakery_num(3, "apples") # this will raise an ArgumentError
 
 # You SHOULD change this driver code. Why? Because it doesn't make sense.
+<<<<<<< HEAD
 p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
  
+=======
+p bakery_num(41, "cake") == "You need to make 5 pie(s), 0 cake(s), and 1 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
+
+>>>>>>> origin/week_6
 
 
 
 #  Reflection 
 
+<<<<<<< HEAD
 # 5. Reflection 
 # What parts of your strategy worked? What problems did you face?
 # I worked on this challenge with Emmanuel. During the session I had to read the code ,understand it and fix it. I did suggest a couple of ideas but could not 
@@ -166,4 +194,7 @@ p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(
 # How to dynamically create Instance variables
 # Which parts of the challenge did you find tedious?
 # researching on how to dynamically create 'variables'
+=======
+
+>>>>>>> origin/week_6
 

@@ -1,6 +1,7 @@
 # U2.W5: Class Warfare, Validate a Credit Card Number
 
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
 
 # 2. Pseudocode
@@ -21,12 +22,22 @@
 # Use reduce to calculate the total of the array new2 
 # if the total is divisible by 10 return true else return false
 #end
+=======
+# I worked on this challenge [by myself, with: ].
+
+# 2. Pseudocode
+
+# Input:
+# Output:
+# Steps:
+>>>>>>> origin/week_6
 
 
 # 3. Initial Solution
 
 # Don't forget to check on intialization for a card length
 # of exactly 16 digits
+<<<<<<< HEAD
 
 
 # class CreditCard
@@ -105,6 +116,17 @@ end
 
 
 end
+=======
+class CreditCard
+
+end
+
+
+
+# 4. Refactored Solution
+
+
+>>>>>>> origin/week_6
 
 
 
@@ -112,16 +134,21 @@ end
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
 
+<<<<<<< HEAD
 valid = CreditCard.new(4563960122001999)
 p (valid.check_card) == true
 invalid = CreditCard.new(1111111111111111)
 p (invalid.check_card) == false
 
 p (valid.class) == CreditCard
+=======
+
+>>>>>>> origin/week_6
 
 
 
 # 5. Reflection 
+<<<<<<< HEAD
 # What parts of your strategy worked? What problems did you face?
 # My initial solution was lengthy but it worked. I decided to play around with array map for my refactored solution and had to read and reasearch a lot
 # on it and finally got it :)
@@ -138,3 +165,5 @@ p (valid.class) == CreditCard
 # rspec passing feels good.
 # Which parts of the challenge did you find tedious?
 # figuring out how to use map took some time but I think I am good at it now :)
+=======
+>>>>>>> origin/week_6

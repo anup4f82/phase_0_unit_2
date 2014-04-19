@@ -1,5 +1,6 @@
 # U2.W5: Virus Predictor
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
 
 # Run the code. Look at the output. Look at the input (it's in the other file). Explain what the program is doing.
@@ -28,6 +29,14 @@
 
 require_relative 'state_data'  #require_relative Statement means the file state_data is in the same directory as the original_code.rb file. When we run the code it will search for the file 
 #state_data in this directory.
+=======
+# I worked on this challenge [by myself, with: ].
+
+# EXPLANATION OF require_relative
+#
+#
+require_relative 'state_data'
+>>>>>>> origin/week_6
 
 class VirusPredictor
 
@@ -39,6 +48,7 @@ class VirusPredictor
     @next_region = regional_spread
   end
 
+<<<<<<< HEAD
 # This method calls the predicted_deaths method and speed_of_spread method by passing in the instance variables as arguments.
 
   def virus_effects  #HINT: What is the SCOPE of instance variables?
@@ -73,6 +83,16 @@ class VirusPredictor
    #Re-factored Solution for predicted_deaths - We dont need the arguments, since instance variables are available across all methods.
 
   def predicted_deaths
+=======
+  def virus_effects  #HINT: What is the SCOPE of instance variables?
+    predicted_deaths(@population_density, @population, @state)
+    speed_of_spread(@population_density, @state)
+  end
+
+  private  #what is this?  what happens if it were cut and pasted above the virus_effects method
+
+  def predicted_deaths(population_density, population, state)
+>>>>>>> origin/week_6
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
     elsif @population_density >= 150
@@ -84,6 +104,7 @@ class VirusPredictor
     else 
       number_of_deaths = (@population * 0.05).floor
     end
+<<<<<<< HEAD
   
           print "#{@state} will lose #{number_of_deaths} people in this outbreak"
     end
@@ -113,6 +134,14 @@ class VirusPredictor
 # Re-factored method - speed_of_spread - We dont need arguments,since instance variables are available across all the methods.
 
   def speed_of_spread #in months
+=======
+
+    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+
+  end
+
+  def speed_of_spread(population_density, state) #in months
+>>>>>>> origin/week_6
     speed = 0.0
 
     if @population_density >= 200
@@ -138,6 +167,7 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
+<<<<<<< HEAD
 # Refactored the Object instantiation
  
 STATE_DATA.each do |x,y|
@@ -163,3 +193,17 @@ STATE_DATA.each do |x,y|
 
 # alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
 # alaska.virus_effects
+=======
+
+alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population], STATE_DATA["Alabama"][:region], STATE_DATA["Alabama"][:regional_spread]) 
+alabama.virus_effects
+
+jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population], STATE_DATA["New Jersey"][:region], STATE_DATA["New Jersey"][:regional_spread]) 
+jersey.virus_effects
+
+california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population], STATE_DATA["California"][:region], STATE_DATA["California"][:regional_spread]) 
+california.virus_effects
+
+alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
+alaska.virus_effects
+>>>>>>> origin/week_6

@@ -1,6 +1,7 @@
 # U2.W5: Build a simple guessing game SOLO CHALLENGE
 
 
+<<<<<<< HEAD
 # I worked on this challenge by myself
 # Define a Class called GuessingGame
 # Define a initializer method for the Class Guessingame which takes one argument 'answer' .Create and Set the instancevariable @answer to answer
@@ -10,6 +11,9 @@
 #             else return correct
 #Define a method called solved? which takes returns false if @answer not equal to @guess, else returns true.
 
+=======
+# I worked on this challenge [by myself, with: ].
+>>>>>>> origin/week_6
 
 # 2. Pseudocode
 
@@ -20,6 +24,7 @@
 
 # 3. Initial Solution
 
+<<<<<<< HEAD
 # class GuessingGame
     
     
@@ -98,6 +103,27 @@ ans = GuessingGame.new(5)
 p (ans.guess(2)) == :low
 p (ans.guess(7)) == :high
 p (ans.guess(5)) == :correct
+=======
+class GuessingGame
+  def initialize(answer)
+    # Your initialization code goes here
+  end
+  
+  # Make sure you define the other required methods, too
+end
+
+
+
+
+# 4. Refactored Solution
+
+
+
+
+
+
+# 1. DRIVER TESTS GO BELOW THIS LINE
+>>>>>>> origin/week_6
 
 
 
@@ -105,6 +131,7 @@ p (ans.guess(5)) == :correct
 
 
 # 5. Reflection 
+<<<<<<< HEAD
 # What parts of your strategy worked? What problems did you face?
 # I didnt face any problems. This was pretty straightforward
 # What questions did you have while coding? What resources did you find to help you answer them?
@@ -119,3 +146,5 @@ p (ans.guess(5)) == :correct
 # rspec passing feels good.
 # Which parts of the challenge did you find tedious?
 #None
+=======
+>>>>>>> origin/week_6
